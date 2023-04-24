@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Мои классы */
+* {
+  box-sizing: border-box;
+}
+
+.cellFrame {
+  text-align: center;
+}
+
+/* Параметры ячейки таблицы */
+.cellPatameters1 {
+  height: 120px;
+  border: 0.5px solid #0909096a;
+  width: 250px;
+}
+/* Параметры ячейки таблицы с меню редактирования */
+.cellPatameters2 {
+  height: 190px;
+  border: 0.5px solid #0909096a;
+  width: 250px;
+}
+
+.tableAll {
+  /* border-collapse: separate;
+  border-spacing: 10px 0px; */
+}
+
+/* Ширина ячейки шапки */
+.cellHeadParameters {
+  /* border-collapse: unset; */
+  border: 0.5px solid #09090952;
+  width: 254px;
+  margin: 50px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.cellPatameters {
+    width: 250px;
+}
+
+.child {
+  /* display: inline-block; */
+  display:flexbox;
+  width: auto;
+  border: 0.5px solid #05050563;
+}
+
+.parent {
+  display: flex;
+}
+
+.leftColomn {
+  width: 200px;
+  box-sizing: content-box;
+  border: 0.5px solid #05050563;
+  padding-right: 20px;
+}
+
+.selectTeacher {
+  box-sizing: content-box;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.btnCourse {
+  width: 160px;
+  height: 50px;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+.dayName {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  /* padding-left: 130%; 
+  padding-right: 130%; */
+  background-color:#f5f1e1;
+  /* display: inline-block; */
+  /* width: 300px; */
+  border: 0.5px solid #05050563;
+}
+
+/* Класcы для стоблца со временм занятий */
+.time {
+  border: 0.5px solid #05050563;
+  box-sizing: content-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  padding-top: 50px;
+  width: 80px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.head {
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0.5px solid #05050563;
+}
+
+.timeOneDay {
+  padding-top: 30px;
+}
+
+.timeDay {
+  height: 120px;
+}
+
+/* Раскраска полей, в зависимости от типа занятий */
+
+.lecture, .practice, .laboratory, .empty, .lecture1, .practice1, .laboratory1  {
+  border: 0.5px solid #05050563;
+  font-size: 20px;
+  /* padding: 10px; */
+  color:  #090909;
+}
+
+.lecture, .practice, .laboratory, .empty  {
+  height: 60px;
+}
+.lecture, .lecture1 {
+  background-color: #f6dddd;
+}
+
+.practice, .practice1 {
+  background-color: rgb(216, 242, 216);
+}
+
+.laboratory, .laboratory1 {
+  background-color: rgb(201, 201, 243);
+}
+
+.lecture1, .practice1, .laboratory1  {
+  height: 120px;
+  padding: 10%;
+}
+
+/* Параметры для клеток с отсутствием занятий  */
+.empty {
+  background-color: rgb(220, 228, 233);
+}
+
+.spanGroup, .spanTeacher, .spanAud, .spanType, .spanTeacher {
+  font-size: 15px;
+  font-style: italic;
+  padding: 5px;
+}
+
+.spanSubj {
+  font-size: 20px;
+  font-weight: 700;
+}
+.redClass {
+  color: red;
+}
+
+/* Парметры надписей в меню редактирования ячейки */
+.menuParam {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
